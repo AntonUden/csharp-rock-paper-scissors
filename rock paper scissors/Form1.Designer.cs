@@ -156,8 +156,8 @@
 			this.ClientSize = new System.Drawing.Size(573, 149);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
+			this.MaximizeBox = false;
 			this.MaximumSize = new System.Drawing.Size(589, 188);
-			this.MinimizeBox = false;
 			this.MinimumSize = new System.Drawing.Size(589, 188);
 			this.Name = "Form1";
 			this.Text = "Rock Paper Scissors";
