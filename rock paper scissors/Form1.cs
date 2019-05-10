@@ -78,7 +78,7 @@ namespace rock_paper_scissors {
 
 		private void play(Choice pChoice) {
 			Random random = new Random();
-			Choice cChoice = (Choice) random.Next(Enum.GetValues(typeof(Choice)).Length);
+			Choice cChoice = (Choice)random.Next(Enum.GetValues(typeof(Choice)).Length);
 
 			Winner winner = getWinner(pChoice, cChoice);
 
@@ -87,16 +87,12 @@ namespace rock_paper_scissors {
 			lbl_Winner.Text = "Winner: " + winner.ToString();
 
 			int wins;
-			if(winCount.TryGetValue(winner, out wins)) {
+			if (winCount.TryGetValue(winner, out wins)) {
 				winCount.Remove(winner);
 				winCount.Add(winner, wins + 1);
 			}
 
 			updateUi();
-		}
-
-		private void groupBox1_Enter(object sender, EventArgs e) {
-
 		}
 	}
 }
